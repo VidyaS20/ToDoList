@@ -1,0 +1,16 @@
+<p>Harry's Data</p>
+<button type="button" class="btn btn-primary">Primary</button>
+<div>
+  <ul *ngFor="let todo of todosList">
+    <li>{{todo.sno}} - {{todo.title}} - {{todo.desc}} - {{todo.active}}</li>
+  </ul>
+</div>
+
+<p>Json placeholder data</p>
+<div>
+  <ul *ngFor="let jsonData of jsonDataList">
+    <li>
+      {{jsonData.userId}} - {{jsonData.id}} - {{jsonData.title}} - {{jsonData.completed}}
+    </li>
+  </ul>
+</div>
